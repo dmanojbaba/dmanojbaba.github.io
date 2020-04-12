@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="7ngjwEpqka9-0NBQQabzZrhAxGPso0hapZxaV_Z4Cq0" />
+
+    <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <meta name="description"
+        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+    {% endif %}
+
+    <link rel="stylesheet" href={{ "assets/css/styles.css" | relative_url }}>
+    <script src={{ "/assets/js/jquery-3.4.1.min.js" | relative_url }}></script>
+    <script src={{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}></script>
+    <script src={{ "/assets/js/fontawesome.all.min.js" | relative_url }}></script>
+    <script src={{ "/assets/js/particles.min.js" | relative_url }}></script>
+    <script src={{ "/assets/js/creative.js" | relative_url }}></script>
+</head>

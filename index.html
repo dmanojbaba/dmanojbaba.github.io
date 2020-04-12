@@ -1,1 +1,27 @@
-Hello World
+---
+layout: default
+particles: true
+links: ["About Me", "Projects"]
+---
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="text-white font-weight-lighter">{{ site.title }}</h1>
+                <p class="text-white-75 font-weight-light mb-5">{{ site.description }}</p>
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                {% for item in site.data.social %}
+                <a aria-label="{{ item.title }}" target="_blank" href="{{ item.link }}"
+                    class="btn btn-outline-light rounded border-0 shadow-none"><i class="{{ item.icon }}"
+                        aria-hidden="true"></i></a>
+                {% endfor %}
+                <div class="mb-5"></div>
+                {% assign filtered_links = site.data.navigation | where_exp:"item","page.links contains item.title" %}
+                {% for item in filtered_links %}
+                <a class="btn btn-dark btn-xl rounded-pill" href="{{ item.link }}">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</header>

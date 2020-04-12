@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+{% include head.html %}
+
+<body id="page-top">
+    {% include navigation.html %}
+
+    {% if page.particles == true %}
+    {% include particles.html %}
+    {% endif %}
+
+    {% if page.url == "/" %}
+    {{ content }}
+    {% else %}
+    {% include content.html %}
+    {% endif %}
+</body>
+
+</html>

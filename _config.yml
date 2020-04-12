@@ -1,0 +1,9 @@
+title: Manoj Baba
+description: Cloud Native, DevOps & Observability Enthusiast
+google-analytics-id: "UA-163455663-1"
+url: "https://dmanojbaba.github.io"
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - LICENSE
