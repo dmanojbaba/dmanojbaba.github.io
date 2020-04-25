@@ -1,4 +1,23 @@
-<div id="particles-js"></div>
+<script src={{ "/assets/js/jquery-3.4.1.min.js" | relative_url }}></script>
+<script src={{ "/assets/js/bootstrap.bundle.min.js" | relative_url }}></script>
+<script src={{ "/assets/js/fontawesome.all.min.js" | relative_url }}></script>
+<script src={{ "/assets/js/particles.min.js" | relative_url }}></script>
+<script src={{ "/assets/js/creative.js" | relative_url }}></script>
+<script>
+    (function () {
+        function getSlideParameter(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&");
+            var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+            var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+            if (Math.floor(slide) == slide && $.isNumeric(slide))
+                return parseInt(slide);
+            else
+                return 0;
+        }
+        $('#carouselCertifications').carousel(getSlideParameter('slide'));
+    })();
+</script>
+{% if page.particles == true %}
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         particlesJS("particles-js", {
@@ -109,3 +128,4 @@
         })
     }, !1);
 </script>
+{% endif %}

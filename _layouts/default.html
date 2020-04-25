@@ -7,7 +7,7 @@
     {% include navigation.html %}
 
     {% if page.particles == true %}
-    {% include particles.html %}
+    <div id="particles-js"></div>
     {% endif %}
 
     {% if page.url == "/" %}
@@ -15,6 +15,8 @@
     {% else %}
     {% include content.html %}
     {% endif %}
+
+    {% include scripts.html %}
 </body>
 
 </html>
