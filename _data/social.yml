@@ -1,6 +1,9 @@
 - title: LinkedIn
   link: https://linkedin.com/in/dmanojbaba
   icon: fab fa-linkedin fa-3x
-- title: Github
+- title: GitHub
   link: https://github.com/dmanojbaba
   icon: fab fa-github fa-3x
+# - title: GitLab
+#   link: https://gitlab.com/dmanojbaba
+#   icon: fab fa-gitlab fa-3x
