@@ -10,9 +10,9 @@ title: Blogs
 </h4>
 <span class="text-white-50 font-weight-light">
     {% if post.description %}
-    {{ post.description }}
+    {{ post.description | markdownify }}
     {% else %}
-    {{ post.excerpt }}
+    {{ post.excerpt | markdownify }}
     {% endif %}
 </span>
 {% endfor %}

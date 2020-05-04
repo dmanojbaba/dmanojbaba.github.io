@@ -5,6 +5,10 @@ title: Projects
 <h2 class="text-white font-weight-lighter mt-0">{{ page.title }}</h2>
 <hr class="divider light my-2" />
 {% for item in site.data.projects %}
-<h4 class="pt-3 font-weight-normal"><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h4>
-<span class="text-white-50 font-weight-light">{{ item.description | markdownify }}</span>
+<h4 class="pt-3 font-weight-normal">
+    <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+</h4>
+<span class="text-white-50 font-weight-light">
+    {{ item.description | markdownify }}
+</span>
 {% endfor %}
