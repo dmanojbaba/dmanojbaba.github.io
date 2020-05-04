@@ -6,11 +6,11 @@ title: About Me
 <hr class="divider light my-2" />
 {% for item in site.data.about %}
 <p class="text-white-50 pt-3 mb-0">{{ item.title }}</p>
-<span class="text-white">{{ item.content | markdownify }}</span>
+<span class="text-white font-weight-light">{{ item.content | markdownify }}</span>
 {% endfor %}
 {% if site.data.certifications %}
 <p class="text-white-50 pt-3 mb-0">Certifications</p>
-<p class="text-white">
+<p class="text-white font-weight-light">
     {% for item in site.data.certifications %}
     <a class="text-decoration-none" href="/certifications?slide={{ forloop.index0 }}">{{ item.title }}</a>
     <br />

@@ -5,6 +5,14 @@ title: Blogs
 <h2 class="text-white font-weight-lighter mt-0">{{ page.title }}</h2>
 <hr class="divider light my-2" />
 {% for post in site.posts %}
-<h4 class="pt-3"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-<span class="text-white-50 mb-4">{{ post.excerpt | markdownify }}</span>
+<h4 class="pt-3 font-weight-normal">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+</h4>
+<span class="text-white-50 font-weight-light">
+    {% if post.description %}
+    {{ post.description }}
+    {% else %}
+    {{ post.excerpt }}
+    {% endif %}
+</span>
 {% endfor %}

@@ -13,8 +13,9 @@ links: ["About Me", "Projects"]
             <div class="col-lg-8 align-self-baseline">
                 {% for item in site.data.social %}
                 <a aria-label="{{ item.title }}" target="_blank" href="{{ item.link }}"
-                    class="btn btn-outline-light rounded border-0 shadow-none"><i class="{{ item.icon }}"
-                        aria-hidden="true"></i></a>
+                    class="btn btn-outline-light rounded border-0 shadow-none">
+                    <i class="{{ item.icon }}" aria-hidden="true"></i>
+                </a>
                 {% endfor %}
                 <div class="mb-5"></div>
                 {% assign filtered_links = site.data.navigation | where_exp:"item","page.links contains item.title" %}

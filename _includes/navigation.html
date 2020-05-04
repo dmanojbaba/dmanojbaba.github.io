@@ -9,8 +9,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 {% for item in site.data.navigation %}
-                <li class="nav-item"><a class="nav-link font-weight-normal js-scroll-trigger"
-                        href="{{ item.link }}">{{ item.title }}</a>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-normal js-scroll-trigger" href="{{ item.link }}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
