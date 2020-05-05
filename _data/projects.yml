@@ -1,3 +1,7 @@
+- title: New Relic NRQL Command for Splunk
+  link: https://splunkbase.splunk.com/app/4988/
+  description: |
+    Splunk generating command to query New Relic data
 - title: Docker Splunk Minion
   link: https://github.com/dmanojbaba/docker-splunk-minion
   description: |
