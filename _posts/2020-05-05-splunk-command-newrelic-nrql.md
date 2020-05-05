@@ -2,8 +2,9 @@
 layout: post
 title: "New Relic NRQL Command for Splunk"
 description: "Execute NRQL statements to query New Relic data from Splunk at no extra cost."
+image: "/assets/images/p201.png"
 ---
-<img class="w-100" src="/assets/images/p201.png" alt="{{ page.title }}">
+<img class="w-100" src="{{ page.image }}" alt="{{ page.title }}">
 
 [Splunk](https://www.splunk.com){:target="_blank"} and [New Relic](https://newrelic.com/){:target="_blank"} are the most popular Observability platforms. Splunk is a powerful operational intelligence & log monitoring tool. New Relic product suite includes Application Performance Monitoring (APM), Real User Monitoring (Browser), Synthetics, Mobile, Infrastructure, and a lot more.
 

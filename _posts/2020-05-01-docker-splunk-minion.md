@@ -2,8 +2,9 @@
 layout: post
 title:  "Splunk Sandbox The Easy Way"
 description: "I always want to try out new ideas - quick and dirty. However...?"
+image: "/assets/images/p101.png"
 ---
-<img class="w-100" src="/assets/images/p101.png" alt="{{ page.title }}">
+<img class="w-100" src="{{ page.image }}" alt="{{ page.title }}">
 
 [Splunk](https://www.splunk.com){:target="_blank"} is a powerful operational intelligence & log monitoring tool. As a Splunk administrator and developer, I always want to test or try out new ideas - quick and dirty. However, the cumbersome process to set up a Splunk sandbox makes me lose motivation.
 
