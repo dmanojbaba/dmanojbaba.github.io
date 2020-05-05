@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Splunk Sandbox The Easy Way"
-description: "I always want to try out new ideas - quick and dirty. However...?"
+description: "Setting up a Splunk sandbox on a local machine has never been easier."
 image: "/assets/images/p101.png"
 ---
 <img class="w-100" src="{{ page.image }}" alt="{{ page.title }}">
