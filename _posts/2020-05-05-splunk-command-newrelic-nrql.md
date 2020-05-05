@@ -3,7 +3,7 @@ layout: post
 title: "New Relic NRQL Command for Splunk"
 description: "Execute NRQL statements to query New Relic data from Splunk at no extra cost."
 ---
-<img class="w-100" src="/assets/images/nrql.png" alt="{{ page.title }}">
+<img class="w-100" src="/assets/images/p201.png" alt="{{ page.title }}">
 
 [Splunk](https://www.splunk.com){:target="_blank"} and [New Relic](https://newrelic.com/){:target="_blank"} are the most popular Observability platforms. Splunk is a powerful operational intelligence & log monitoring tool. New Relic product suite includes Application Performance Monitoring (APM), Real User Monitoring (Browser), Synthetics, Mobile, Infrastructure, and a lot more.
 
@@ -25,7 +25,7 @@ Example 1:<br/>
 | nrql connection="example-account" query="select count(*) from PageView since yesterday"
 </code>
 <br/>
-<img class="w-100" src="/assets/images/nrql1.png" alt="nrql">
+<img class="w-100" src="/assets/images/p202.png" alt="nrql">
 
 Example 2:<br/>
 <code>
@@ -33,7 +33,7 @@ Example 2:<br/>
 | table deviceType, count
 </code>
 <br/>
-<img class="w-100" src="/assets/images/nrql2.png" alt="nrql">
+<img class="w-100" src="/assets/images/p203.png" alt="nrql">
 
 Example 3:<br/>
 <code>
@@ -44,7 +44,7 @@ facet deviceType timeseries auto"
 | xyseries _time, deviceType, count
 </code>
 <br/>
-<img class="w-100" src="/assets/images/nrql3.png" alt="nrql">
+<img class="w-100" src="/assets/images/p204.png" alt="nrql">
 
 Download the app today from Splunkbase: [https://splunkbase.splunk.com/app/4988/](https://splunkbase.splunk.com/app/4988/){:target="_blank"}
 
