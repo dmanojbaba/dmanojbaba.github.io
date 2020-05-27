@@ -30,5 +30,6 @@
     {% include analytics.html %}
     {% endif %}
 
-    <link rel="stylesheet" href={{ "assets/css/styles.css" | relative_url }}>
+    <link rel="preload" href={{ "assets/css/styles.css" | relative_url }} as="style" crossorigin />
+    <link rel="stylesheet" href={{ "assets/css/styles.css" | relative_url }} />
 </head>

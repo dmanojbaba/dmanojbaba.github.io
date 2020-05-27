@@ -2,7 +2,7 @@
 layout: post
 title: "New Relic NRQL Command for Splunk"
 description: "Execute NRQL statements to query New Relic data from Splunk at no extra cost."
-image: "/assets/images/p201.png"
+image: "/assets/images/p201.jpg"
 ---
 <img class="w-100" src="{{ page.image }}" alt="{{ page.title }}">
 

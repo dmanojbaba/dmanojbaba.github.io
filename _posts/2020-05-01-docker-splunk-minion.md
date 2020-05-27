@@ -2,7 +2,7 @@
 layout: post
 title:  "Splunk Sandbox The Easy Way"
 description: "Setting up a Splunk sandbox on a local machine has never been easier."
-image: "/assets/images/p101.png"
+image: "/assets/images/p101.jpg"
 ---
 <img class="w-100" src="{{ page.image }}" alt="{{ page.title }}">
 
