@@ -5,7 +5,8 @@
   content: |
     Splunk, New Relic, Elasticsearch,<br/>
     Ansible, Git, DevOps CI/CD,<br/>
-    Google Cloud Platform, Docker, Kubernetes,<br/>
+    Azure, Google Cloud Platform, <br/>
+    Docker, Kubernetes,<br/>
     Python, JavaScript, CSS, SQL
 - title: Domains
   content: |
